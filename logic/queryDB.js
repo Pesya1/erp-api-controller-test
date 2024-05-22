@@ -9,6 +9,8 @@ export const dbOptions = { timeout: config.octopus.timeout };
 
 export const querydb = async (query) => {
     try {
+        if (query?.filter)
+            query.where = [...(query.where || []), ...(convertFilterWhere(query.filter || {}) || [])];
         let result = await client.request('db', query, dbOptions);
         return result;
     }
