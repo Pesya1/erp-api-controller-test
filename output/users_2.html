@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        @media print,
+        screen {
+
+            html,
+            body {
+                /*width: 210mm;*/
+                height: 100mm;
+            }
+
+            #customers {
+                font-family: Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+                word-wrap: break-word;
+                table-layout: fixed;
+            }
+
+            #customers td,
+            #customers th {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            #customers tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            #customers tr:hover {
+                background-color: #ddd;
+            }
+
+            #customers th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #04AA6D;
+                color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Users report</h1>
+        
+        <h2>Date: 31/10/2022 13:43</h2>
+    </div>
+
+
+    <div>
+        <h1>1 user</h1>
+       <h2> ayala</h2>
+       <h2> ayalap@one1.co.il</h2>
+
+    </div>
+
+    <div>
+        <table id="customers">
+            <tr>
+                <th>username</th>
+                <th>email</th>
+                <th width="150">password date</th>
+                <th width="100">maale user name</th>
+            </tr>
+            
+                <tr>
+                    <td>
+                        ayala
+                    </td>
+                    <td>
+                        ayalap@one1.co.il
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        ayala
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        yael
+                    </td>
+                    <td>
+                        yael@gmail.com
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        yaron
+                    </td>
+                    <td>
+                        yaron@one1.co.il
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                
+        </table>
+    </div>
+    <p style="page-break-after: always;">&nbsp;</p>
+    <p style="page-break-before: always;">&nbsp;</p>
+    <p>another page</p>
+</body>
+
+</html>
