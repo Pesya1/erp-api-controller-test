@@ -36,3 +36,8 @@ export const joinUnique=(arr)=>{
     let uniqueArr = merge.filter((str, index, self) => self.indexOf(str) === index);
     return uniqueArr
  }
+
+
+ export const isArray = (value) => {
+  return Array.isArray(value)
+}
