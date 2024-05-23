@@ -12,3 +12,7 @@ export const include = (str) => {
     }
 }
 
+// slice the str to be maximum maxLength
+export const cut=(str,maxLength)=>{
+    (str||'').slice(0, maxLength||10)
+}
